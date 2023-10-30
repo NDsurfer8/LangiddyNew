@@ -1,0 +1,86 @@
+{
+  "expo": {
+    "name": "Langiddy",
+    "slug": "langiddy",
+    "version": "1.8.9",
+    "orientation": "portrait",
+    "icon": "./assets/appIcon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/langiddy_O.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "buildNumber": "1.8.9",
+      "bundleIdentifier": "com.ndsurf888.langgiddy"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.ndsurf888.langgiddy"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-apple-authentication"
+      ],
+      [
+        "@react-native-voice/voice",
+        {
+          "microphonePermission": "Allow access to your microphone to record audio and turn it to text.",
+          "speechRecognitionPermission": "Allows accesses to your microphone to record audio and turn it to text."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Langiddy requires access to your camera to take photos for your profile and send images."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Langiddy requires access to photo library to upload your profile photo and send images."
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Invite Friends using Langiddy to chat with you on the app."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "sounds": [
+            "./assets/sounds/notification.wav"
+          ]
+        }
+      ],
+      "expo-localization"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "cfc9a456-4c6f-4946-836a-89614848f33f"
+      }
+    }
+  },
+  "react-native-google-mobile-ads": {
+    "ios_app_id": "ca-app-pub-7278635770152409~5056538833"
+  }
+}
